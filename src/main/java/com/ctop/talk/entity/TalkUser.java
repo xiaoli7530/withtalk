@@ -2,21 +2,16 @@ package com.ctop.talk.entity;
 
 import java.util.Date;
 
-import java.math.BigDecimal;
 import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
 import org.hibernate.annotations.BatchSize;
 import org.hibernate.annotations.GenericGenerator;
-import org.hibernate.annotations.Parameter;
 import org.springframework.format.annotation.DateTimeFormat;
-
 import com.ctop.fw.common.entity.BaseEntity;
-import org.springframework.format.annotation.DateTimeFormat;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 
@@ -48,6 +43,12 @@ public class TalkUser extends BaseEntity implements Serializable {
 
 	@Column(name = "USER_NAME")
 	private String userName;//用户名
+
+	@Column(name = "PHONE_NUMBER")
+	private String phoneNumber;//电话号码
+
+	@Column(name = "EMAIL")
+	private String email;//邮件地址
 
 	@Column(name = "TYPE")
 	private String type;//账号类型(普通账号、管理账号)
@@ -116,6 +117,22 @@ public class TalkUser extends BaseEntity implements Serializable {
 
 	public void setUserName(String userName) {
 		this.userName = userName;
+	}
+	
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+	
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 	
 	public String getType() {

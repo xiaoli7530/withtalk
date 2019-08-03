@@ -198,67 +198,6 @@ public class Constants {
 		public static final String CLOSE = "CLOSE";//关闭
 	}
 	
-
-	/**
-	 * 二维码
-	 */
-	public static class QrCode{
-		
-		/**标签二维码开始字符串 */
-		public static final String START = "[)>";
-		/**入库标签格式表头*/
-		public static final String IN_LABEL_TITLE = "06";
-		/**出库标签格式表头*/
-		public static final String OUT_LABEL_TITLE = "08";
-		/**入厂标签格式表头*/
-		public static final String IN_PLACE_TITLE = "09";
-		/**标签二维码结束符ASII:4*/
-		public static final String END_OF_TRANSMISSION = "";
-		/**标签二维码分组符ASII:29*/
-		public static final String GROUP_SEPARATOR = "";
-		/**标签二维码记录分隔符ASII:30*/
-		public static final String RECORD_SEPARATOR = "";
-		/**标签二维码零件号前缀*/
-		public static final String PART_CODE_PREFIX ="P";
-		/**标签二维码项目号前缀*/
-		public static final String PROJECT_CODE_PREFIX ="XM";
-		/**标签二维码订单号前缀*/
-		public static final String PO_CODE_PREFIX ="K";
-		/**标签二维码入厂的号前缀*/
-		public static final String IN_CODE_PREFIX ="I";
-		/**标签二维码ASN号前缀*/
-		public static final String ASN_CODE_PREFIX ="SNR";
-		/**标签二维码批次总量前缀*/
-		public static final String BATCH_QTY_PREFIX ="B";
-		/**标签二维码箱数量前缀*/
-		public static final String BOX_QTY_PREFIX ="Q";
-		/**标签二维码扩展信息前缀*/
-		public static final String EXPANSION_INFO_PREFIX ="C";
-		/**标签二维码箱号前缀*/
-		public static final String BOX_PREFIX ="1J";
-		/**标签二维码交样日期前缀*/
-		public static final String DELIVERY_DATE_PREFIX ="SP";
-		/**标签二维码入厂日期前缀*/
-		public static final String IN_DATE_PREFIX ="ID";
-		/**标签二维码物料用途前缀*/
-		public static final String USAGE_PREFIX ="U";
-		/**标签二维码SMT前缀*/
-		public static final String SMT_PREFIX ="S";
-		/**标签二维码需求人信息前缀*/
-		public static final String APPLICANT_PREFIX ="A";
-		/**标签二维码DRE信息前缀*/
-		public static final String DRE_PREFIX ="D";
-		/**标签二维码返修单前缀*/
-		public static final String REPAIR_CODE_PREFIX ="R";
-		/**标签二维码任务单前缀*/
-		public static final String TASK_CODE_PREFIX ="T";
-		/**标签二维码结束符解析*/
-		public static final String ANALYZE_END_OF_TRANSMISSION = "`EOT";
-		/**标签二维码分组符解析*/
-		public static final String ANALYZE_GROUP_SEPARATOR = "`GS";
-		/**标签二维码记录分隔符解析*/
-		public static final String ANALYZE_RECORD_SEPARATOR = "`RS";
-	}
 	
 	
 	public static class UserStatus {

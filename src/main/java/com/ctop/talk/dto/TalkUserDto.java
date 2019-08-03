@@ -3,7 +3,6 @@ package com.ctop.talk.dto;
 import com.ctop.fw.common.model.BaseDto;
 import java.util.Date;
 import java.io.Serializable;
-import java.math.BigDecimal;
 import org.springframework.format.annotation.DateTimeFormat;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
@@ -20,6 +19,8 @@ public class TalkUserDto extends BaseDto implements Serializable {
 	private String loginName;
 	private String password;
 	private String userName;
+	private String phoneNumber;
+	private String email;
 	private String type;
 	private String status;
 	private String remark;
@@ -67,6 +68,22 @@ public class TalkUserDto extends BaseDto implements Serializable {
 
 	public void setUserName(String userName) {
 		this.userName = userName;
+	}
+	
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+	
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 	
 	public String getType() {

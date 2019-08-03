@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: withtalk
 Implementation-Version: 1.0
-Built-By: Administrator
+Built-By: ljw
 Implementation-Vendor-Id: com.li
-Build-Jdk: 1.8.0_171
+Build-Jdk: 1.8.0_141
 Implementation-URL: http://projects.spring.io/spring-boot/withtalk/
 Created-By: Maven Integration for Eclipse
 Implementation-Vendor: Pivotal Software, Inc.
