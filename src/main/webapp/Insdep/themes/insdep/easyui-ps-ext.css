@@ -1,0 +1,732 @@
+input, textarea {
+    outline: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+}
+textarea {
+    padding-left:5px;
+}
+	
+/*所有页面，包括弹框*/
+.panel-body{
+	background-color:transparent;
+}
+.layout-panel-center .combo-panel {
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: rgba(255,255,255,.1);
+}
+.layout-panel-center .combo-panel .datagrid-btable tr{
+	background-color: rgba(255,255,255,0.1);
+}
+.panel-body-noheader {
+    border-top-width: 0;
+}
+
+/*首页快捷按钮*/
+.ico_link a{
+		text-align: center;
+		display: inline-block;
+		margin: 20px 0;
+		padding: 10px 5px;
+		color: #333;
+}
+.ico_link a:hover,.catenate a:hover{
+	cursor: pointer;
+	box-shadow: 0 0 10px #ccc;
+	border-radius: 5px;
+	line-height: 20px;
+	transition: ease all .3s;
+}
+.ico_link a p,.catenate a p{
+	font-size: 14px;
+	line-height: 30px;
+}
+
+/*导航hover事件箭头变化*/
+/* .ps-head-menu a:hover .m-btn-downarrow{
+	background: url(images/menu_arrows_white.png) no-repeat 0 center;
+} */
+.catenate a:hover{
+	color:#459df5;
+}
+.status {
+    margin: 0 1%;
+    box-shadow: 2px 2px 10px 0 #aaa;
+    background-color: rgba(232,238,243,.3);
+}
+/*标签a（按钮）的hover、active等事件*/
+/*header导航栏导航按钮*/
+.nav .l-btn, .nav .l-btn-plain {
+    border-radius: 0;
+    margin: 0 2px;
+}
+.nav a {
+    color: #fff;
+    display: inline-block;
+    line-height: 50px;
+}
+.nav .l-btn-plain:hover,.nav .l-btn:hover{
+    background:#f6f6f6;
+}
+.nav a:hover,.nav a:active{
+	border:1px solid transparent;
+    border-bottom:2px solid rgba(230,60,46,.8)!important;
+}
+.button-default {
+    border-bottom: 2px solid rgba(230,60,46,.8) !important;
+}
+.color-blue, .button-blue, .button-default, .color-info, .progressbar-blue .progressbar-value .progressbar-text {
+    background-color: #f6f6f6 !important;
+}
+/* .textbox .textbox-button:active {
+	background: #;
+}
+ */
+.button-default .m-btn-downarrow{
+	background: url(images/menu_arrows.png) no-repeat 0 center;
+}
+/*按钮按下时的效果*/
+.l-btn:active,
+.l-btn-plain:active {
+  background: transparent;
+}
+/*按钮被禁用时的效果*/
+.l-btn-disabled,.l-btn-disabled:hover{
+    opacity: 0.5;
+    cursor: default;
+    background: transparent;
+    color:#ccc;
+    background-repeat: repeat-x;
+    border: 1px solid transparent;
+    border-top: none;
+    cursor: url(images/disable.png), default;
+}
+.l-btn-plain-disabled, .l-btn-plain-disabled:hover {
+    background: transparent;
+    filter: alpha(opacity=50);
+    cursor:default;
+}
+
+/*按钮被禁用时文字跟图标的效果*/
+.l-btn-disabled .l-btn-text,
+.l-btn-disabled .l-btn-icon {
+  filter: alpha(opacity=50);
+}
+.l-btn-plain-disabled,
+.l-btn-plain-disabled:hover {
+  background: transparent;
+  filter: alpha(opacity=50);
+}
+/*按钮被选择时的效果*/
+.l-btn-selected,
+.l-btn-selected:hover,
+.l-btn-plain-selected,
+.l-btn-plain-selected:hover{
+  background: transparent;
+}
+.l-btn-selected,
+.l-btn-selected:hover{
+  border: 2px solid #adadad;
+}
+
+.m-btn-plain-active,
+.s-btn-plain-active {
+  border:1px solid transparent;
+  border-bottom:2px solid #cc463b!important;
+  background-color: tarnsparent;
+  color: #fff;
+}
+
+.messager-button .l-btn {
+    margin: 2px;
+    background: #cc463b;
+    border: 0;
+    color:#fff;
+}
+.messager-button .l-btn:hover{
+	background: #cc463b;
+	border: 0;
+}
+.button_div{
+	padding:0;
+}
+.form_div .button_div{
+	padding:5px 0;
+}
+.button_div .l-btn{
+	background: #cc463b;
+	border: 0;
+    color:#fff;
+    margin-top: 3px;
+}
+.button_div .l-btn:hover{
+	background-color: transparent;
+}
+.textbox .textbox-button{
+	background-color:#00945E;
+	color:#fff;
+}
+.textbox-button-right{
+	border:none;
+}
+.textbox .textbox-button:hover{
+	border:none;
+	cursor: pointer;
+	background-color:#00945E;
+}
+.item_contant .textbox .textbox-button{
+	background-color:#f0f0f0;
+}
+.pagination .l-btn-plain:hover,.pagination .l-btn:hover{
+	border-color:transparent;
+}
+.pagination .l-btn:hover,.pagination .l-btn-plain:hover{
+	background-color:transparent;
+}
+.list-toolbar .easyui-linkbutton:nth-child(1),.window .easyui-linkbutton:nth-child(1){
+	margin: 2px;
+	background: #cc463b;
+	border: 1px solid #cc463b;	
+}
+.list-toolbar .easyui-linkbutton,.window .easyui-linkbutton{
+	margin: 2px;
+	background: transparent;
+	border: 2px solid rgba(230,60,46,.3);
+}
+.operation .l-btn{
+	background: transparent;
+    border: 2px solid rgba(230,60,46,.3);
+}
+.operation .l-btn:nth-child(1){
+	background-color: #cc463b;
+	border: 0;
+}
+.easyui-linkbutton .l-btn-text{
+	color: #ED483A;
+}
+.easyui-linkbutton:nth-child(1) .l-btn-text{
+	color:#fff;
+}
+.l-btn-plain:hover, .l-btn:hover {
+    background: transparent;
+    border: 2px solid rgba(230,60,46,.3);
+}
+.color-blue,.button-blue,.button-default,.color-info,.progressbar-blue .progressbar-value .progressbar-text 
+{ background-color:#f6f6f6 !important;}
+.color-blue:hover,.button-blue:hover,.button-default:hover
+{ background-color:#f6f6f6 !important;} 
+
+
+/*table的样式*/
+/* .panel-header{
+	background: rgba(211,237,255,.5);
+}
+.datagrid-header, .datagrid-toolbar, .datagrid-pager, .datagrid-footer-inner {
+   /*  border-color: #3E4B5B; */
+}
+.datagrid-header{
+	border: 0;
+}
+.datagrid-btable{
+	border-spacing: 0 7px;
+}
+.window .datagrid-btable{
+	border-spacing: 0;
+}
+.datagrid-header td{
+    border: 0;
+    color: rgba(68,68,68,.6);
+}
+.datagrid-body td, .datagrid-footer td {
+    border: 0;
+    color: rgba(68,68,68,1);
+}
+.right_content  .datagrid-header td{
+	border: 0;
+	background-color: #4d4d4d;
+    color: #b7b7b7;
+}
+.right_content .datagrid-body td{
+	color:#fff;
+	border-bottom: 1px solid #555;
+}
+.combo-panel .datagrid-header td{
+	background-color: #fff;
+}
+.datagrid-header, .datagrid-td-rownumber {
+    background-color: transparent;
+    color: #444;
+    border:0;
+}
+.datagrid-header td.datagrid-header-over{
+	background: transparent;
+}
+.datagrid-btable tr {
+    background: #fff;
+}
+.datagrid-btable tr:nth-child(2n+0) {
+    background: #f9f9f9 !important;
+}
+.datagrid-btable tr:hover{
+    background: rgba(204,70,59,.1) !important;
+    cursor:pointer;
+}
+.right_content .datagrid-btable tr {
+    background: #444!important;
+}
+.right_content .datagrid-btable tr:hover{
+	background-color: #4d4d4d!important;
+}
+.form-table td:nth-child(2n+1){
+	text-align:right;
+}
+.form-table td:nth-child(2n){
+	text-align:left;
+}
+.datagrid-btable .datagrid-row-selected,.datagrid-btable .datagrid-row-selected:nth-child(2n){
+    background: rgba(204,70,59,.2) !important;
+}
+/*表头*/
+.datagrid-header-row {
+    font-weight: 600;
+    font-size: 13px;
+}
+.commentsTable tr:nth-child(1) td{
+	font-weight:600;
+	font-size: 11px;
+}
+
+/*输入框样式*/
+.textbox,.textbox .textbox-text{
+	font-size:14px;
+}
+/* .textbox, .textbox .textbox-text {
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    box-shadow: none;
+    background: transparent;
+} */
+.textbox {
+    position: relative;
+    background-color: #fff;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0;
+    border-radius: 4px;
+    border: 0;
+    margin: 5px 0;
+}
+/* .window .textbox {
+	background-color: rgba(244,244,244,.1);
+	border: 0;
+} */
+.form_div .textbox{
+	background: #f9f9f9;
+    border: 1px solid #DEE3E7;
+}
+.textbox .textbox-addon{
+	padding: 0;
+}
+.textbox .textbox-text {
+    border: none;
+}
+.textbox .textbox-prompt {
+    color: #aaa;
+}
+.datagrid-cell .textbox{
+	margin: 0;
+}
+.datagrid-row-editing .textbox, .datagrid-row-editing .textbox-text {
+    border-radius: 2px;
+}
+/* .textbox-disabled .textbox-text {
+    background: #f0f0f0;
+} */
+.textbox-readonly{
+	border:none;
+}
+.textbox-readonly .textbox-text{
+	background-color:transparent;
+}
+.textbox textarea{
+	overflow:auto;
+}
+.textbox-disabled .textbox-text,.textbox-disabled .textbox-addon{
+	background-color: transparent;
+}
+/*下拉菜单样式及hover事件*/
+.menu {
+   color: #444;
+	border: 1px solid #f0f0f0;
+}
+.menu, .menu-content {
+    background-color: #fff;
+}
+.combo-panel{
+	background-color: #fff;
+}
+.combobox-item-hover,.menu-active{
+	background-color: #f9f9f9;
+	border-color:#f9f9f9;
+}
+.combobox-item-selected:hover{
+	background-color:#464c58;
+}
+
+/*新增页面*/
+.easyui-fluid {
+    box-shadow: none;
+}
+
+.messager-question {
+    height: 60px!important;
+}
+/*可编辑的列*/
+.datagrid-hody .editable span{
+	padding-left:20px;
+	background:url(images/edit.png) no-repeat left;
+	background-size:14px;
+}
+.datagrid-body .editable{
+	border:1px solid #7bb8f5;
+}
+
+.ico-help {
+    background: url(images/help.png) no-repeat 5px center;
+    padding-left:22px;
+    text-align:center;
+    line-height:30px;
+    top: -10px;
+}
+.ps_logout .ico-help{
+	color:#fff;
+	background-color: #ccc;
+	border-radius: 4px;
+}
+.ps_logout .ico-help:hover {
+    background: url(images/help1.png) no-repeat 5px center;
+    background-size: 18px;
+	border-radius: 4px;
+	background-color: #d7dce3;
+	color:#444;
+}
+
+div .identification{
+	display:inline-block;
+	line-height:60px;
+	margin:5% 10px;
+	color:#ccc;
+}
+.identification:hover{
+	color:#267eff;
+}
+
+.input-table{
+	width:98%;
+}
+.input-table td{
+	padding-left:15px;
+	width:25%;
+	height:24px;
+}
+.textbox-readonly, .input-table td>span.textbox-readonly {
+    background: #f9f9f9;
+    border: 1px solid #DEE3E7;
+}
+.input-table .validatebox-disabled{
+	width:100% !important;
+}
+
+
+.tabDiv{
+	position:absolute;
+	top:37px;
+	left:47%;
+	margin-left:-312px;
+}
+.tabDiv .easyui-linkbutton{
+	background-color:transparent;
+}
+.tabDiv .easyui-linkbutton .l-btn-text{
+	color:#3c3c3c;
+}
+.tabDiv .l-btn{
+	border:none;
+	border-bottom:2px solid #aaa;
+	border-radius:0;
+}
+.tabDiv .l-btn:hover{
+	border-bottom:2px solid #7bb8f5;
+}
+.tabDiv .selected,.tabDiv .selected:hover{
+	font-weight:600;	
+	border-bottom:2px solid #ff5a00;
+}
+.tabDiv .selected .l-btn-text,.tabDiv .selected .l-btn-text:hover{
+	color:#ff5a00;
+}
+
+/*分页*/
+.datagrid .datagrid-pager {
+    display: block;
+    margin: 0;
+    border: 0;
+}
+.pagination {
+    zoom: 1;
+    background-color: transparent;
+}
+.datagrid .datagrid-pager span,.pagination-info{
+	color: #444;
+}
+.right_content .datagrid .datagrid-pager span,.right_content .pagination-info{
+	color: #fff;
+}
+.pagination-page-list, .pagination .pagination-num {
+    border-color: #ccc;
+    background: transparent;
+}
+.pagination .pagination-num {
+    border-width: 1px;
+    border-style: solid;
+    margin: 0 2px;
+    padding: 2px;
+    width: 2em;
+    height: auto;
+    text-align: center;
+    color:#444;
+}
+.right_content .pagination .pagination-num{
+	color: #fff;
+}
+.pagination-page-list {
+    margin: 0px 6px;
+    padding: 1px 2px;
+    width: auto;
+    height: auto;
+    background: url(images/arrow-stuffed-gray.png) no-repeat scroll right center !important;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid #ccc;
+    padding-right: 20px;
+    color:#444;
+}
+.right_content .pagination-page-list{
+	color:#fff;
+	 background: url(images/arrow-down-white.png) no-repeat scroll right center !important;
+}
+.window .pagination-page-list option{
+	color: #444;
+}
+.pagination-btn-separator {
+    float: left;
+    height: 24px;
+    border:0;
+    margin: 3px 1px;
+}
+.pagination-first, .pagination-prev, .pagination-next, .pagination-last, .pagination-load {
+    background-image: url(images/pagination_icons_white1.png);
+    background-repeat: no-repeat;
+}
+.right_content .pagination-first, .right_content .pagination-prev, .right_content .pagination-next, .right_content .pagination-last, .right_content .pagination-load {
+    background-image: url(images/pagination_icons_white.png);
+    background-repeat: no-repeat;
+}
+
+/*弹出窗*/
+.window {
+    overflow: hidden;
+    padding: 0;
+    border: 0;
+    background-color: #fff;
+}
+.panel-header, .panel-body, .accordion {
+    border-color: transparent;
+}
+.panel-header, .accordion, .accordion .accordion-header {
+    background: #444;
+}
+.window .panel-header{
+	background: #fff;
+}
+/* .window .panel-body{
+    background: #444;
+} */
+.window .messager-body{
+	 background: #fff;
+}
+.dialog-button {
+    background: transparent;
+}
+/*close*/
+.panel-tool-close,.panel-tool-max,.panel-tool-min{
+	 background-color: rgba(170,170,170,.8);
+	 border-radius: 3px;
+}
+.panel-tool a{
+	margin-left: 5px;
+}
+.panel-tool a:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    background-color: #aaa;
+    border-radius: 3px;
+}
+.panel-tool-close, .panel-tool-min, .panel-tool-max, .panel-tool-restore, .panel-tool-collapse, .panel-tool-expand {
+    background-image: url(images/panel_tools_white.png);
+    background-repeat: no-repeat;
+}
+/*输入框样式*/
+.textbox-invalid.textbox-focused,.right_content .datagrid-btable .textbox-invalid.textbox-focused {
+	border-color: #cc463b;
+	border-width: 1px;
+	box-shadow:0 0 3px #ffa341;
+}
+
+.textbox .textbox-text{
+	border:none;
+}
+.input-table td > span.textbox {
+    border-radius: 3px;
+    background-color: #F9F9F9;
+    border:1px solid #DEE3E7;
+}
+textarea{
+	margin:5px 0;
+	border-radius:3px;
+	line-height: 20px;
+}
+.input-table td > span input.textbox-text {
+    width: 95% !important;
+}
+.datebox .textbox-addon-right, .datebox .textbox-addon-left {
+    background-color: transparent;
+}
+
+
+.ctop-fit table td a{
+	color:#fff;
+}
+.window .icon-clear {
+    background: url(images/panel_tools_white.png) no-repeat -22px 4px;
+}
+
+
+.calendar-header {
+    background: #cc463b;
+}
+.calendar-text.calendar-nav-hover,
+.calendar-nextmonth.calendar-nav-hover,
+.calendar-nextyear.calendar-nav-hover,
+.calendar-prevmonth.calendar-nav-hover,
+.calendar-prevyear.calendar-nav-hover
+{ background-color:#cc463b;}
+.calendar-body, .calendar-menu {
+    background: #F9F9F9;
+}
+.calendar table {
+    background: #F9F9F9;
+    table-layout: fixed;
+    border-collapse: separate;
+}
+.calendar-body th, .calendar-menu-month {
+    color: #cc463b;
+}
+.calendar-day{
+    border: 1px solid #ccc;
+    padding: 0;
+    cursor: pointer;
+    background: #f5f5f5;
+}
+.calendar-selected {
+    background-color: #79c942;
+    color: #fff;
+    border: none;
+    padding: 0;
+}
+.calendar-today {
+    font-weight: bold;
+}
+.datebox-button {
+    border-top: 1px solid #cccccc;
+    background-color: #F9F9F9;
+}
+.datebox-button a {
+    line-height: 22px;
+    text-decoration: none;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    padding: 3px 10px;
+    background-color: #cc463b;
+    border: 0;
+    color: #fff;
+    border-radius:2px;
+}
+datebox-button a:hover{
+	opacity: 1;
+    filter: alpha(opacity=100);
+    cursor:pointer;
+}
+.calendar-hover,.calendar-nav-hover,.calendar-menu-hover{
+	color:#fff;
+	background-color:#ff8000;
+}
+
+.panel-tool{
+	margin-top:-15px;
+	height:32px;
+}
+
+.menu-sep{
+	border-top: 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+.m-btn .l-btn-left .l-btn-text{
+	color:#444;
+}
+
+.tabs li a.tabs-inner, .tabs-header, .tabs-tool {
+    background-color: transparent;
+}
+.tabs-title{
+	color:#fff;
+}
+.tabs-selected .tabs-title{
+	color:rgba(68,190,231,1);
+}
+.tabs li a.tabs-inner:hover, .tabs li.tabs-selected a.tabs-inner{
+	background-color: transparent;
+}
+.tabs-header, .tabs-scroller-left, .tabs-scroller-right, .tabs-tool, .tabs, .tabs-panels, .tabs li a.tabs-inner, .tabs li.tabs-selected a.tabs-inner, .tabs-header-bottom .tabs li.tabs-selected a.tabs-inner, .tabs-header-left .tabs li.tabs-selected a.tabs-inner, .tabs-header-right .tabs li.tabs-selected a.tabs-inner {
+    border: 0;
+}
+.tabs li.tabs-selected a.tabs-inner {
+    border-bottom: 4px solid rgba(68,190,231,1);
+}
+
+.window .window-header .panel-title{
+	color: #444;
+}
+.spinner-arrow-up,.spinner-arrow-down{
+	height: 25px;
+}
+.combo-p .textbox .textbox-addon .textbox-icon{
+	width: 36px !important;
+}
+.tree-title{
+	display: inline;
+}
+.messager-icon + div{
+    display: inline-block;
+    width: calc(100% - 102px);
+}
